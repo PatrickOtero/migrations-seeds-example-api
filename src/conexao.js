@@ -4,8 +4,17 @@ const knex = require('knex') ({
         user: 'postgres',
         host: 'localhost',
         database: 'migrationsSeeds',
-        password: 'postgres',
-    }
+        password: 'newLife10',
+    },
+    migrations: {
+        directory: "src/migrations",
+        extension: "js",
+      },
+      seeds: { 
+        directory: "src/seeds",
+        extension: "js",
+        timestampFilenamePrefix: true, 
+        },
 });
 
 module.exports = knex;
