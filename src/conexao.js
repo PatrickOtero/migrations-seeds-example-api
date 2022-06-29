@@ -3,8 +3,8 @@ const knex = require('knex') ({
     connection: {
         user: 'postgres',
         host: 'localhost',
-        database: 'market_cubos',
-        password: 'newLife10',
+        database: 'migrationsSeeds',
+        password: 'postgres',
     }
 });
 
