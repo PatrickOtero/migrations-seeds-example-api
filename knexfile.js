@@ -1,10 +1,12 @@
-
 module.exports = {
 
   development: {
     client: 'pg',
     connection: {
-      filename: './src/conexao.js'
+      user: 'postgres',
+      host: 'localhost',
+      database: 'migrationseeds',
+      password: 'newLife10',
     },
     migrations: {
       directory: "src/migrations",
@@ -20,7 +22,7 @@ module.exports = {
   staging: {
     client: 'pg',
     connection: {
-      database: 'migrationSeeds',
+      database: 'migrationseeds',
       user:     'postgres',
       password: 'newLife10'
     },
