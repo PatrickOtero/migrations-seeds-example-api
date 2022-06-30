@@ -1,6 +1,5 @@
 module.exports = {
 
-  development: {
     client: 'pg',
     connection: {
       user: 'postgres',
@@ -17,14 +16,4 @@ module.exports = {
       extension: "js",
       timestampFilenamePrefix: true, 
       },
-  },
-
-  staging: {
-    client: 'pg',
-    connection: {
-      database: 'migrationseeds',
-      user:     'postgres',
-      password: 'newLife10'
-    },
-  },
 }
